@@ -10,7 +10,6 @@ $(function () {
     };
     $('#wrapper').tubular(options); 
 
-
     var $pages = $(".page");
     var i = 0;
 
@@ -61,19 +60,19 @@ $(function () {
 
     function pageChk(i) {
         if (i == 1) {
-            $("#alert1").animate({
+            $("#alert1").stop().delay(5000).animate({
                 right: '5%'
             }, 750);
         }
 
         if (i == 2) {
-            $("#alert2").animate({
+            $("#alert2").stop().delay(5000).animate({
                 right: '5%'
             }, 750);
         }
 
         if (i == 3) {
-            $("#alert3").animate({
+            $("#alert3").stop().delay(5000).animate({
                 right: '5%'
             }, 750);
         }
